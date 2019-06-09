@@ -1,0 +1,23 @@
+{
+  "name": "my-gulp-example",
+  "version": "1.0.0",
+  "description": "Just an example on how to use Gulp to develop a website.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "No test"
+  },
+  "author": "Osvaldo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  }
+}
