@@ -1,6 +1,6 @@
 {
   "name": "my-gulp-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Just an example on how to use Gulp to develop a website.",
   "main": "gulpfile.js",
   "scripts": {
