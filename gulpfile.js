@@ -1,5 +1,5 @@
 const { src, dest, series, watch } = require('gulp');
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const rename = require("gulp-rename");
@@ -19,7 +19,7 @@ function scripts() {
     .pipe(sourcemaps.init())
     .pipe(rename({ basename: "scripts" }))
     .pipe(dest('dist/js/'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(rename({ suffix: ".min" }))
     .pipe(sourcemaps.write("."))
     .pipe(dest('dist/js/'));
