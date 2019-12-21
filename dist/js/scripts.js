@@ -13,4 +13,5 @@ console.log("This is an example of a source JS (Foo) - Delete it");
 /*jshint browser: true*/
 
 /*global console*/
-console.log("This is an example of a source JS (Bar) - Delete it");
+var example = "This is an example of a source JS (Bar) - Delete it";
+console.log(example);
