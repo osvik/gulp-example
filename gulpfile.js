@@ -3,7 +3,7 @@ const terser = require('gulp-terser');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const rename = require("gulp-rename");
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require("gulp-clean-css");
 const sourcemaps = require("gulp-sourcemaps");
 
@@ -33,7 +33,7 @@ function styles () {
   .pipe(cleanCSS())
   .pipe(rename({ suffix: ".min" }))
   .pipe(sourcemaps.write("."))
-  .pipe(dest('dist/css/'))
+  .pipe(dest('dist/css/'));
 }
 
 function whatchMe(){
